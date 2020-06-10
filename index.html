@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Corona Tracker</title>
+    <script src="https://kit.fontawesome.com/78a56a5c1c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="interface">
+        <header>
+            <span><img src="/images/virus.png" alt=""></span>
+            <h1>Corona Tracker</h1>
+        </header>
+        <div class="field">
+            <label for="uf">selecione um Estado:</label>
+            <select name="uf">
+                    <option value="">Clique em mim!</option>
+            </select>
+        </div>
+        <div class="dados">
+            <div class="card">
+                <h2>Casos:</h2>
+                <span id="cases" hidden></span><h3 hidden>infectados</h3>
+            </div>
+
+            <div class="card">
+                <h2>mortes:</h2>
+                <span id="deaths" hidden> </span><h3 hidden>obitos</h3>   
+            </div>
+
+            <div class="card">
+                <h2>suspeitas:</h2>
+                <span id="suspects" hidden> </span><h3 hidden>suspeitas</h3>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

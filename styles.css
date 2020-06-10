@@ -1,0 +1,88 @@
+:root {
+    --title-color: #322153;
+    --primary-color: #34cb79;
+}
+* {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--primary-color);
+}
+#interface {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    background-color: #271942;
+}
+header {
+    display: flex;
+    flex-direction: row;
+}
+header span {
+    width: 16px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-right: 18px;
+}
+header h1 {
+    color: #228c52;
+}
+img {
+    object-fit: cover;
+    width: 48px;
+}
+.field {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+}
+.dados {
+    display: flex;
+    flex-direction: row;
+}
+.dados .card {
+    margin: 16px;
+    width: 25vw;
+    height: 33vh;
+    background-color: var(--title-color);
+}
+.dados .card h2 {
+    margin: 22px auto;
+}
+.dados .card h2, .dados .card span {
+    position: relative;
+    bottom: 0;
+    transition: all .4s;
+}
+select {
+    color: gray;
+    border-radius: 8px;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    text-indent: 6px;
+    flex: 1;
+    height: 26px;
+    border: 0;
+}
+option {
+    color: gray;
+}
+@media (max-width: 700px) {
+    #interface .dados {
+        flex-direction: column;
+    }
+    #interface {
+        justify-content: space-between;
+        height: 100%;
+    }
+    .dados .card {
+        width: 50vw;
+    }
+}
